@@ -45,7 +45,16 @@
       .container {
         display: grid;
         grid-gap: 20px;
-        grid-template-columns: 1fr 500px 1fr;
+        grid-template-areas:
+          '🚀 🚀 🚀 🚀 🐹 🐹 🐹 🐹'
+          '🚀 🚀 🚀 🚀 🐹 🐹 🐹 🐹'
+          '🚀 🚀 🚀 🚀 🐹 🐹 🐹 🐹'
+          '🚀 🚀 🚀 🚀 🐹 🐹 🐹 🐹';
+      }
+
+      .item3 {
+        grid-column: 🚀-start / 🐹-end;
+        grid-row-end: 🚀-end;
       }
     </style>
   </body>
